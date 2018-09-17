@@ -5,14 +5,17 @@ body{
 .navbar{
     background-color: white;
     padding: 5px;
+    margin-bottom: 50px;
     color: lightseagreen;
-    cursor: pointer;
+    cursor: pointer; 
+} 
+.button{
+    color: white
 }
 .summary{
     background-color: white;
     padding:30px;
-    margin-top: 20px;
-    margin-right: 5px;
+    margin: 15;
     border-radius: 5pt; 
 }
 .page_title{
@@ -41,8 +44,7 @@ body{
 .visualizations{
     background-color: white;
     padding: 30px;
-    margin-top: 20px;
-    margin-left: 5px;
+    margin: 15px;
     border-radius: 5pt; 
 }
 .chart_title{
