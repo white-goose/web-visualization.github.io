@@ -1,0 +1,55 @@
+
+body{
+    background-color: lightgray;
+}    
+.navbar{
+    background-color: white;
+    padding: 5px;
+    color: lightseagreen;
+    cursor: pointer;
+}
+.summary{
+    background-color: white;
+    padding:30px;
+    margin-top: 20px;
+    margin-right: 5px;
+    border-radius: 5pt; 
+}
+.page_title{
+    color: lightseagreen;
+    justify-content: flex-start;
+    font-size-adjust: inherit;
+    padding: 30px;
+    font-weight: bold;
+    font-family: "Georgia", Times, serif;
+    font-size: 26pt;
+
+}
+.image-temp{
+    padding: 20px;
+}
+
+.p_1, .p_2{
+    font-size-adjust: inherit;
+    color: black;
+    text-align: justify;
+    font-weight: normal;
+    font-family: "Georgia", Times, serif;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+.visualizations{
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 5pt; 
+}
+.chart_title{
+    color: lightseagreen;
+    padding: 30px;
+    font-weight: bold;
+    font-family: "Georgia", Times, serif;
+    font-size: 20pt;
+
+}
