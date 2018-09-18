@@ -4,19 +4,25 @@ body{
 }    
 .navbar{
     background-color: white;
-    padding: 5px;
+    padding: 2px;
     margin-bottom: 50px;
     color: lightseagreen;
     cursor: pointer; 
 } 
-.button{
-    color: white
+.dropdown{
+    padding: 3px;
+    margin: 10px;
 }
 .summary{
     background-color: white;
     padding:30px;
-    margin: 15;
-    border-radius: 5pt; 
+    width: 800px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    margin-right: 0;
+    border-radius: 5pt;
+    display: flex;
+    flex-wrap: wrap; 
 }
 .page_title{
     color: lightseagreen;
@@ -40,12 +46,17 @@ body{
     font-family: "Georgia", Times, serif;
     font-size: 18px;
     flex-wrap: wrap;
+    display: flex;
 }
 .visualizations{
     background-color: white;
-    padding: 30px;
-    margin: 15px;
+    padding: 1px;
+    width: 400px;
+    margin-bottom: 150px;
     border-radius: 5pt; 
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
 }
 .chart_title{
     color: lightseagreen;
@@ -53,5 +64,15 @@ body{
     font-weight: bold;
     font-family: "Georgia", Times, serif;
     font-size: 20pt;
-
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslategray;
+    color: lightseagreen;
+    text-align: center;
+    padding: 10px;
+ }
