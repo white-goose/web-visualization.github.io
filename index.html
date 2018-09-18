@@ -8,55 +8,71 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
     <title>Welcome To Latitude vs. X!</title>
+   
   </head>
   <body>
     <!-- Navbar -->
-        <nav class="navbar navbar">
-            <div class="container">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Latitude</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand text-light bg-dark" href="index.html">Latitude</a>
+        </div>
+        <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="temperature.html">Latitude vs. Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Latitude vs. Cloudiness</a>
+                <a class="dropdown-item" href="wind_speed.html">Latitude vs. Wind Speed</a>
               </div>
-              <ul class="nav navbar-nav">
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                     <li><a href="temperature.html">Temperature</a></li>
-                     <li><a href="humidity.html">Humidity</a></li>
-                     <li><a href="cloudiness.html">Cloudiness</a></li>
-                     <li><a href="wind_speed.html">Wind Speed</a></li>
-                   </ul>
-                </li>
-                <li><a href="comparison.html">Comparison</a></li>
-                <li class="active"><a href="data.html">Data</a></li>
-               </ul>
-             </div>
-         </nav>
-        <!-- <div class="container"> -->
-          <div class="row">
-             <div class="col-sm-8">
-               <div class="summary">
-                 <h2 class="page_title"> Summary: Latitude vs. X </h2>
-                 <img class="image-temp" src="Images/Temperature.png" width= "600px" height="400px">
-                 <p class="p_1">The purpose of this project is to analysis how the weather changes as one travels closer to the equator. To accomplish our analysis, we used the Open Weather API and the CitiPy Python Library to randomly pull 500 cities from around the world to create our dataset. </p>
-                 <p class="p_2">After we assembled our data, we used the Pandas and Matplotlib Python libraries to analyze our data set. Our four dependent variables were: max temperature, humidity, cloudiness, and wind speed. This dashboard shows the source data and the visualizations based on our four dependent variables. We also explain the trends that is shown in our visualizations</p> 
-               </div>
-               <div class="visualizations">
-                 <div class="col-sm-4">
-                   <h2 class="chart_title">Visualizations</h2>
-                   <a href="temperature.html"><img src="Images/Temperature.png" width="200px" height="150px"></a>
-                   <a href="humidity.html"><img src="Images/Humidity.png" width="200px" height="150px"></a>
-                   <a href="cloudiness.html"><img src="Images/Cloudiness.png" width="200px" height="150px"></a>
-                   <a href="wind_speed.html"><img src="Images/Wind_speed.png" width="200px" height="150px"></a>
-                 </div>
-               </div>
-             </div>
-          </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+          <div class="row align-items-start">
+              <div class="col-lg-7">
+                <h2 class="page_title"> Summary: Latitude vs. X </h2> 
+                <hr>
+                <a href="temperature.html"><img class="image-temp" src="Images/Temperature.png" class="img-fluid" alt="Responsive image"></a>
+                <p class="p_1">The purpose of this project is to analysis how the weather changes as one travels closer to the equator. To accomplish our analysis, we used the Open Weather API and the CitiPy Python Library to randomly pull 500 cities from around the world to create our dataset. </p>
+                <p class="p_2">After we assembled our data, we used the Pandas and Matplotlib Python libraries to analyze our data set. Our four dependent variables were: max temperature, humidity, cloudiness, and wind speed. This dashboard shows the source data and the visualizations based on our four dependent variables. We also explain the trends that is shown in our visualizations</p> 
+              </div>
+              <div class="col-lg-4">
+                  <h2 class="chart_title" >Visualizations</h2>
+                  <hr>
+                  <a href="temperature.html"><img src="Images/Temperature.png" class="rounded float-left"  width="250px" height="200px"></a>
+                  <a href="humidity.html"><img src="Images/Humidity.png" class="rounded float-right"  width="250px" height="200px"></a>
+                  <a href="cloudiness.html"><img src="Images/Cloudiness.png" class="rounded float-left"  width="250px" height="200px"></a>
+                  <a href="wind_speed.html"><img src="Images/Wind_speed.png" class="rounded float-right"  width="250px" height="200px"></a>
+              </div>
+          </div>  
         </div>
       </div>
-  <div class="footer">
-      <p>&copy 2018 Data Boot Camp</p>
-  </div>
+    </div>
+    <div class="footer">
+        <p>&copy 2018 Data Boot Camp</p>
+    </div>
   </body>
 </html>

@@ -4,62 +4,84 @@ body{
 }    
 .navbar{
     background-color: white;
-    padding: 2px;
+    padding: 10px;
+    padding-left: 20;
     margin-bottom: 50px;
-    color: lightseagreen;
-    cursor: pointer; 
+    color: rgb(31, 127, 190);
+
 } 
-.dropdown{
-    padding: 3px;
-    margin: 10px;
+.navbar-brand{
+    padding: 7px;
+    margin-left: 70px;
+    font-size: 26pt;
+    font-family: "Georgia", Times, serif;
+    font-weight: bold;
+    color: rgb(31, 127, 190);
 }
-.summary{
-    background-color: white;
-    padding:30px;
-    width: 800px;
+.nav-link{
     margin-left: 60px;
-    margin-bottom: 60px;
-    margin-right: 0;
-    border-radius: 5pt;
+    font-size: 22pt;
+    font-family: "Georgia", Times, serif;
+    font-weight: bold;
+    color: rgb(31, 127, 190);
+}
+.col-lg-7{
+    background-color: white;
+    padding: 40px;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    border-radius: 7pt;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;  
 }
 .page_title{
-    color: lightseagreen;
+    color: rgb(31, 127, 190);
     justify-content: flex-start;
     font-size-adjust: inherit;
     padding: 30px;
     font-weight: bold;
     font-family: "Georgia", Times, serif;
-    font-size: 26pt;
+    font-size: 30pt;
 
 }
 .image-temp{
-    padding: 20px;
+    padding: 10px;
 }
+hr {     
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    width: 95%;
+} 
 
 .p_1, .p_2{
     font-size-adjust: inherit;
-    color: black;
+    color: rgb(47, 50, 53);
     text-align: justify;
     font-weight: normal;
     font-family: "Georgia", Times, serif;
-    font-size: 18px;
+    font-size: 20px;
     flex-wrap: wrap;
     display: flex;
 }
-.visualizations{
+.col-lg-4{
     background-color: white;
-    padding: 1px;
-    width: 400px;
-    margin-bottom: 150px;
-    border-radius: 5pt; 
+    padding: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    border-radius: 7pt; 
     display: flex;
     flex-wrap: wrap;
-    float: right;
 }
 .chart_title{
-    color: lightseagreen;
+    color: rgb(31, 127, 190);
     padding: 30px;
     font-weight: bold;
     font-family: "Georgia", Times, serif;
@@ -71,8 +93,8 @@ body{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: darkslategray;
-    color: lightseagreen;
+    background-color:rgb(24, 101, 153);
+    color: rgb(228, 236, 238);
     text-align: center;
-    padding: 10px;
+    padding: 5px;
  }
