@@ -116,3 +116,26 @@ hr {
     font-family: "Georgia", Times, serif;
     font-size: 30pt;
 }
+/* data_table_page */
+.data_table{
+    background-color: white;
+    padding: 50px;
+    margin: 70px;
+    font-weight: bold;
+    font-size: 18pt;
+    border-radius: 7px;
+}
+.data_header{
+    color: rgb(31, 127, 190);
+    padding: 50px;
+    font-weight: bold;
+    font-family: "Georgia", Times, serif;
+    font-size: 30pt;
+}
+.p_data{
+    color: rgb(47, 50, 53);
+    text-align: justify;
+    font-weight: normal;
+    font-family: "Georgia", Times, serif;
+    font-size: 26px;
+}
