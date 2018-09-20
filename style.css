@@ -1,6 +1,6 @@
 
 body{
-    background-color: lightgray;
+    background-color: rgb(168, 180, 190);
 }    
 .navbar{
     background-color: white;
@@ -33,8 +33,8 @@ body{
     margin-bottom: 30px;
     margin-right: 0px;
     border-radius: 7pt;
-    display: flex;
-    flex-wrap: wrap;  
+    /* display: flex;
+    flex-wrap: wrap;   */
 }
 .page_title{
     color: rgb(31, 127, 190);
@@ -47,7 +47,7 @@ body{
 
 }
 .image-temp{
-    padding: 10px;
+    padding-right: 40px;
 }
 hr {     
     margin-top: 0.5em;
@@ -60,14 +60,12 @@ hr {
 } 
 
 .p_1, .p_2{
-    font-size-adjust: inherit;
-    color: rgb(47, 50, 53);
-    text-align: justify;
+    color: rgb(18, 18, 20);
+    text-align: justify; 
     font-weight: normal;
     font-family: "Georgia", Times, serif;
-    font-size: 20px;
-    flex-wrap: wrap;
-    display: flex;
+    font-size: 28px;
+    padding: 30px;
 }
 .col-lg-4{
     background-color: white;
@@ -82,10 +80,10 @@ hr {
 }
 .chart_title{
     color: rgb(31, 127, 190);
-    padding: 30px;
+    padding: 28px;
     font-weight: bold;
     font-family: "Georgia", Times, serif;
-    font-size: 20pt;
+    font-size: 26pt;
 }
 
 .footer {
@@ -93,7 +91,7 @@ hr {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:rgb(24, 101, 153);
+    background-color:rgb(22, 61, 94);
     color: rgb(228, 236, 238);
     text-align: center;
     padding: 5px;
